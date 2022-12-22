@@ -14,6 +14,10 @@ body {
 }
 .App{
     width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
     display: flex;
     justify-content: center;
 }
@@ -29,23 +33,57 @@ body {
 .card{
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 6px;
-    margin: 20px;
+    margin: 10px 0;
     max-width: 400px;
     display: flex;
+    width: 100%;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     background-color: #FFFFFF;
+    padding: 20px;
 }
-.fav-posts-table{
+.fav-posts_table{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 15px;
     background: #b6afa2;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 6px;
 }
 .fav_text{
     color: #FFFFFF;
+}
+.lower-case{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 20px 0 10px 0;
+}
+.cat-paw{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    justify-content: center;
+}
+.load-next{
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 40px;
+    padding: 15px 0;
+    background: #4caf50;
+    width: 100%;
+    max-width: 400px;
+}
+@media screen and (min-width: 1024px){
+    .fav-posts_table{
+        position: fixed;
+        right: 0;
+        width: 30%;
+        top: 0;
+    }
 }
